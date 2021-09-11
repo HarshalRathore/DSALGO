@@ -3,7 +3,6 @@ using namespace std;
 
 void actual_merge(int arr[], int low, int high, int mid){
 
-
     int n1=mid-low+1;
     int n2=high-mid;
     int a1[n1], a2[n2];
@@ -34,8 +33,6 @@ void actual_merge(int arr[], int low, int high, int mid){
         arr[k]=a2[j];
         k++,j++;
     }
-
-
 }
 
 void merge_sort(int arr[], int high, int low){
