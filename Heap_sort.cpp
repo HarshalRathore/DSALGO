@@ -35,36 +35,7 @@ void heap_sort(int arr[], int n){
 }
 
 int main(){
-    // vector<int> vec;
-    // vec.push_back(5);
-    // vec.push_back(4);
-    // vec.push_back(3);
-    // vec.push_back(2);
-    // vec.push_back(1);
-
-    // cout<<vec.size()<<endl;
-    // for (int i=0;i<vec.size();i++){
-    //     cout<<vec[i]<<" ";
-    // }
-
-    // vector<int>::iterator it;
-    // cout<<endl;
-    // it=vec.begin();
-    // cout<<*it;
-    // it++;
-    // cout<<*it;
-    // sort(vec.begin(), vec.end());
-    // cout<<endl;
-
-    // for (int i=0;i<vec.size();i++){
-    //     cout<<vec[i]<<" ";
-    // }
     int n;
-    // cin>>n;
-    // int arr[n];
-    // for(int i=0; i<n; i++){
-    //     cin>>arr[i];
-    // }
     int arr[8]={5, 9, 12, 15, 19, 21, 26, 30};
     n=8;
 
