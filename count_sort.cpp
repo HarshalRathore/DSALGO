@@ -35,7 +35,7 @@ void Count_sort(int arr[], int n){
 }
 
 int main(){
-    int arr[10]={8, 23, 32, 12 ,34 ,11 ,98 ,43 ,54 ,67};
+    int arr[10]={10, 10, 8, 8, 6, 6, 4, 4, 2, 1};
     int n=sizeof(arr)/sizeof(arr[0]);
     
     Count_sort(arr, n);
