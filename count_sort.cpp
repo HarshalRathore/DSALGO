@@ -13,17 +13,16 @@ void Count_sort(int arr[], int n){
             max=arr[i];
         }
     }
-    // Ideally we should create an array count[max] but
-    // we can't as an array can not be dynamically allocated
-    int count[1000]={0};
+
+    int count[max+1]={0};
     for (int i=0; i<n; i++){
         count[arr[i]]++;
     }
 
     // creating the sorted array 
-    for (int i=0; i<n; i++){
-        if (i-1>=0){
-        count[i]+=count[i-1];
+    for (int i=0; i<max+1; i++){
+        if (i-1>=0){ // to avoid core dump
+            count[i]+=count[i-1];
         }
     }
 
@@ -35,7 +34,7 @@ void Count_sort(int arr[], int n){
 }
 
 int main(){
-    int arr[10]={10, 10, 8, 8, 6, 6, 4, 4, 2, 1};
+    int arr[15]={98, 10, 8, 8, 6, 6, 4, 4, 2, 1, 23, 43, 45, 54, 23};
     int n=sizeof(arr)/sizeof(arr[0]);
     
     Count_sort(arr, n);
