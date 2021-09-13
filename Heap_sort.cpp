@@ -2,6 +2,7 @@
 using namespace std;
 
 void heapify(int arr[], int n, int i){
+    // creating max heap 
     int largest = i;
     int left_child = (2*i) + 1;
     int right_child = (2*i) +2;
@@ -24,10 +25,14 @@ void heapify(int arr[], int n, int i){
 }
 
 void heap_sort(int arr[], int n){
+    
+    // building a first max heap starting from last parent node n/2 - 1
     for (int i=(n/2)-1; i>=0; i--){
         heapify(arr, n, i);
     }
 
+    // switching root element to last and last to root then
+    // decresing size of array and again heapifying it and then again doing the same shit
     for (int i=n-1; i>=0; i--){
         swap(arr[0], arr[i]);
         heapify(arr, i, 0);
