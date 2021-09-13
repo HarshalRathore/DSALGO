@@ -13,19 +13,20 @@ void Count_sort(int arr[], int n){
             max=arr[i];
         }
     }
-
+    // creating count array & assining values
     int count[max+1]={0};
     for (int i=0; i<n; i++){
         count[arr[i]]++;
     }
 
-    // creating the sorted array 
+    // adding an elements before elements count to it
     for (int i=0; i<max+1; i++){
         if (i-1>=0){ // to avoid core dump
             count[i]+=count[i-1];
         }
     }
-
+    
+    // creating the sorted array 
     for (int i=n-1; i>=0; i--){
         int temp=--count[temparr[i]];
         arr[temp]=temparr[i];
