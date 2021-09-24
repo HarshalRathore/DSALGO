@@ -3,7 +3,7 @@ using namespace std;
 
 void heapify(int arr[], int n, int i){
     // creating max heap 
-    int largest = i;
+    int largest = i; // This variable is a pointer type behaving variable in this code its point is to indicate towards the element greater than its child in the end of heapify funtion and then swap it with its parent
     int left_child = (2*i) + 1;
     int right_child = (2*i) +2;
 
