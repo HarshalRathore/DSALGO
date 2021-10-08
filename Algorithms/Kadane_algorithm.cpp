@@ -1,4 +1,4 @@
-// possible sub-array's sum find which one is Maximum
+// among all possible sub-arrays sums find which one is Maximum.
 
 #include <bits/stdc++.h>
 using namespace std;
