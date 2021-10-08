@@ -1,3 +1,8 @@
+/*
+you are given an array in which every element is repeating/oucciring thrice except one element.
+Fing that element.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
