@@ -6,8 +6,6 @@ bool isSafe(string str,int l, int i, int r){
         return false;
     if(l!=0 && str[l]=='A' && str[l+1]=='B')
         return false;
-    // if(r==(l+1) && str[i]=='A' && str[l]=='B')
-    //     return false;
     return true;
 }
 
