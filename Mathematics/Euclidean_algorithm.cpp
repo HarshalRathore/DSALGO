@@ -1,5 +1,7 @@
 /*
 Use of Euclidean algorithm to find the GCD/HCF.
+reference:- https://www.youtube.com/watch?v=Jwf6ncRmhPg
+https://codility.com/media/train/10-Gcd.pdf
 */
 
 #include <bits/stdc++.h>
@@ -15,7 +17,7 @@ int GetGCD(int a, int b){
     if (a==b)
         return a;
     if (a>b)
-        return GetGCD(b, a-b);
+        return GetGCD(a-b, b);
     else
         return GetGCD(a, b-a);
 }
